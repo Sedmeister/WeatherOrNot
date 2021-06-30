@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky_day"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/CityEditText"
+        android:layout_width="299dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="40dp"
+        android:accessibilityLiveRegion="none"
+        android:autofillHints="testHint"
+        android:background="@drawable/border_round"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/johannesburg"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/SearchButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TypeCityHere"
+        android:layout_width="319dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/border_round"
+        android:text="@string/type_your_city_name_below"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/CityEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="703dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="68dp"
+        android:onClick="search"
+        android:text="@string/search"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="115dp"
+        android:layout_height="113dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="168dp"
+        android:contentDescription="@string/personwithflag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/weather_or_not"
+        android:textColor="#F6F3F3"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LowHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Description" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="28dp"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle" />
+
+    <TextView
+        android:id="@+id/FeelsLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LowHigh" />
+
+    <TextView
+        android:id="@+id/CurrentTemp"
+        android:layout_width="78dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/string_14"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iconImage"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle" />
+
+    <TextView
+        android:id="@+id/Country"
+        android:layout_width="54dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

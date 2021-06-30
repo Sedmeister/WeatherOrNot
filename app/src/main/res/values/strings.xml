@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WeatherOrNot</string>
+    <string name="search">SEARCH</string>
+    <string name="type_your_city_name_below">Type your City name below (•◡•)</string>
+    <string name="katlehong">Katlehong</string>
+    <string name="weather_or_not">Weather-Or-Not ¯_(ツ)_/¯</string>
+    <string name="_14">14°</string>
+    <string name="string_14" />
+    <string name="feels_like_12">Feels like 12°</string>
+    <string name="_24_18">24°/18°</string>
+    <string name="fair">Fair</string>
+    <string name="za">ZA</string>
+    <string name="personwithflag">PersonWithFlag</string>
+    <string name="johannesburg">Johannesburg</string>
+</resources>
